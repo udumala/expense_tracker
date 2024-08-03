@@ -1,0 +1,33 @@
+/* Adding the directives to use tailwindcss */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* importing the feComponentTransfer */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* creating 2 variables for the usage of custom colours */
+:root{
+  --color--yellow:#ffc300;
+  --color--purple:#740fc3;
+}
+
+*>*{
+  font-family: "Roboto", sans-serif;
+  margin:0;
+  padding:0;
+}
+.App {
+  text-align: center;
+  padding: 4em 0;
+  /* padding:(top and bottom) (left and right) */
+}
+
+.bg-yellow{
+  background-color: var(--color--yellow);
+}
+
+.bg-purple{
+  background-color: var(--color--purple);
+}
+
+
